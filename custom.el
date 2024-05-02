@@ -6,7 +6,7 @@
  '(delete-selection-mode nil)
  '(helm-minibuffer-history-key "M-p")
  '(package-selected-packages
-   '(company-mode vertico undo-fu telephone-line helm general evil-collection doom-themes)))
+   '(which vertico undo-fu telephone-line neotree magit helm-projectile general evil-collection doom-themes company-box)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

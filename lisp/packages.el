@@ -91,4 +91,11 @@
 (use-package magit
   :ensure t)
 
+;; Which-key
+(use-package which-key
+  :ensure t
+  :init
+  (which-key-mode)
+  (which-key-setup-side-window-bottom))
+
 (provide 'packages)

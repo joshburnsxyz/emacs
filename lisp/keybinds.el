@@ -17,6 +17,7 @@
     "bb" 'helm-buffer
     "bl" 'next-buffer
     "bk" 'kill-buffer
+    "be" 'eval-buffer
 
     ;; Project Management
     "pp" 'helm-projectile-switch-project
@@ -26,6 +27,11 @@
     "pd" 'helm-projectile-find-dir
     "pb" 'helm-projectile-switch-to-buffer
     "pg" 'helm-projectile-grep
+
+    ;; Git
+    "gg" 'magit-status
+    "gs" 'magit-stage-buffer-file
+    "gc" 'magit-commit
  )
 
 (provide 'keybinds)
