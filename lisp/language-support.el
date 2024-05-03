@@ -15,4 +15,10 @@
 (use-package emmet-mode
   :ensure t)
 
+;; Python
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
+
 (provide 'language-support)
