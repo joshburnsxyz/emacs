@@ -3,23 +3,29 @@
     :keymaps 'override
     :prefix "SPC"
 
-    ;; Shortcuts / Qol
+    ;; Global M-x Shortcut
     "SPC" 'helm-M-x
-    "ff" 'helm-find-files
 
-    ;; Window Movement
+    ;; Shortcuts / Qol
+    "q" '(:ignore t :which-key "QoL Shortcuts")
+    "qf" 'helm-find-files
+
+    ;; Window
+    "w" '(:ignore t :which-key "Window")
     "wh" 'evil-window-left
     "wj" 'evil-window-down
     "wk" 'evil-window-up
     "wl" 'evil-window-right
 
-    ;; Buffer movement
+    ;; Buffer
+    "b" '(:ignore t :which-key "Buffer")
     "bb" 'helm-buffer
     "bl" 'next-buffer
     "bk" 'kill-buffer
     "be" 'eval-buffer
 
     ;; Project Management
+    "p" '(:ignore t :which-key "Project")
     "pp" 'helm-projectile-switch-project
     "pa" 'projectile-add-known-project
     "pt" 'neotree-toggle
@@ -29,6 +35,7 @@
     "pg" 'helm-projectile-grep
 
     ;; Git
+    "g" '(:ignore t :which-key "Git")
     "gg" 'magit-status
     "gs" 'magit-stage-buffer-file
     "gc" 'magit-commit
