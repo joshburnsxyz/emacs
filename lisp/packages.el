@@ -98,4 +98,8 @@
   (which-key-mode)
   (which-key-setup-side-window-bottom))
 
+;; Evil NERD commenter
+(use-package evil-nerd-commenter
+  :ensure t)
+
 (provide 'packages)

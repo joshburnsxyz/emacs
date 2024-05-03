@@ -6,6 +6,9 @@
     ;; Global M-x Shortcut
     "SPC" 'helm-M-x
 
+    ;; Commenter
+    "/" 'evilnc-comment-or-uncomment-lines
+
     ;; Shortcuts / Qol
     "q" '(:ignore t :which-key "QoL Shortcuts")
     "qf" 'helm-find-files
