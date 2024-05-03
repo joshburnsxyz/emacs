@@ -1,3 +1,9 @@
+;;; language-support.el --- Configure programming language support features
+
+;;; Commentary:
+
+;;; Code:
+
 ;; Web HTML/CSS/JS stuff
 
 (use-package web-mode
@@ -12,9 +18,6 @@
     (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode)))
 
-(use-package emmet-mode
-  :ensure t)
-
 ;; Python
 (use-package elpy
   :ensure t
@@ -22,3 +25,5 @@
   (elpy-enable))
 
 (provide 'language-support)
+
+;;; language-support.el ends here

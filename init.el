@@ -10,6 +10,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'ui)
 (require 'packages)
+(require 'snippets)
 (require 'keybinds)
 (require 'language-support)
 

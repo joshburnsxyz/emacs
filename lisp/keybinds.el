@@ -1,3 +1,9 @@
+;;; keybinds.el --- Describe and define Evil keybinds
+
+;;; Commentary:
+
+;;; Code:
+
 (general-define-key
     :states 'normal
     :keymaps 'override
@@ -26,6 +32,7 @@
     "bl" 'next-buffer
     "bk" 'kill-buffer
     "be" 'eval-buffer
+    "bf" 'flycheck-buffer
 
     ;; Project Management
     "p" '(:ignore t :which-key "Project")
@@ -42,6 +49,13 @@
     "gg" 'magit-status
     "gs" 'magit-stage-buffer-file
     "gc" 'magit-commit
+
+    ;; Snippets
+    "s" '(:ignore t :which-key "Snippets")
+    "ss" 'yas-insert-snippet
+    "se" 'yas-expand
  )
 
 (provide 'keybinds)
+
+;;; keybinds.el ends here

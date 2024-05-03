@@ -1,3 +1,10 @@
+;;; packages.el --- Install and setup packages
+
+;;; Commentary:
+
+;;; Code:
+
+
 ; list the repositories containing them
 (setq package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "https://elpa.gnu.org/packages/")
@@ -7,7 +14,7 @@
 ; activate all the packages (in particular autoloads)
 (package-initialize)
 
-; fetch the list of packages available 
+; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -26,7 +33,7 @@
   (load-theme 'doom-pine t))
 
 ;;; UNDO
-;; Vim style undo 
+;; Vim style undo
 (use-package undo-fu
   :ensure t)
 
@@ -102,4 +109,12 @@
 (use-package evil-nerd-commenter
   :ensure t)
 
+;; FlyCheck
+(use-package flycheck
+  :ensure t
+  :config
+  (add-hook 'after-init-hook #'global-flycheck-mode))
+
 (provide 'packages)
+
+;;; packages.el ends here
