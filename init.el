@@ -11,6 +11,7 @@
 (require 'ui)
 (require 'packages)
 (require 'keybinds)
+(require 'language-support)
 
 ;; Load custom.el
 (when (file-exists-p custom-file)
