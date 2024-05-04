@@ -24,6 +24,12 @@
   :init
   (elpy-enable))
 
+;; Go
+(use-package go-mode
+  :ensure t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode)))
+
 ;; Markdown
 (use-package markdown-mode
   :ensure t
