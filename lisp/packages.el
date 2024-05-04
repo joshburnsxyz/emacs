@@ -30,7 +30,7 @@
 (use-package doom-themes
   :ensure t
   :init
-  (load-theme 'doom-pine t))
+  (load-theme 'doom-nova t))
 
 ;;; UNDO
 ;; Vim style undo
