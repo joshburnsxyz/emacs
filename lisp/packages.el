@@ -92,6 +92,7 @@
 (use-package helm-projectile
   :ensure t
   :config
+  (projectile-mode 1)
   (helm-projectile-on))
 
 ;; Magit
