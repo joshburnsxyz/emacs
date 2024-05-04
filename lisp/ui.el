@@ -11,6 +11,9 @@
 ;; Display line numbers in every buffer
 (global-display-line-numbers-mode 1)
 
+;; Disable theme safety checks
+(setq custom-safe-themes t)
+
 (provide 'ui)
 
 ;;; ui.el ends here

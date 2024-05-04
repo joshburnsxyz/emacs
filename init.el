@@ -1,5 +1,11 @@
+;;; init.el --- configuration entry point
+
+;;; Commentary:
+
+;;; Code:
+
 ;; QoL
-(setq inhibit-startup-message t)  ; Comment at end of line!
+(setq inhibit-startup-message t)  ; No splash screen
 (setq visible-bell t)            ; Flash when the bell rings
 (setq make-backup-files nil) ; stop creating ~ files
 (auto-save-mode -1) ; disable auto saves
@@ -17,3 +23,5 @@
 ;; Load custom.el
 (when (file-exists-p custom-file)
   (load custom-file))
+
+;;; init.el ends here
