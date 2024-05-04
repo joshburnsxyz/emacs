@@ -12,6 +12,9 @@
 
 (setq custom-file (concat user-emacs-directory "custom.el"))
 
+;; Enable electric pair mode
+(electric-pair-mode 1)
+
 ;; Load modules
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'ui)
