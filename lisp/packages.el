@@ -1,6 +1,7 @@
 ;;; packages.el --- Install and setup packages
 
 ;;; Commentary:
+;; TODO: seperate packages into categories
 
 ;;; Code:
 
@@ -122,6 +123,11 @@
   :init
   (global-git-gutter-mode +1))
 
+;; Highlight TODO/FIXME comments
+(use-package hl-todo
+  :ensure t
+  :init
+  (global-hl-todo-mode))
 
 (provide 'packages)
 
