@@ -116,6 +116,13 @@
   :config
   (add-hook 'after-init-hook #'global-flycheck-mode))
 
+;; Git status at a glance
+(use-package git-gutter
+  :ensure t
+  :init
+  (global-git-gutter-mode +1))
+
+
 (provide 'packages)
 
 ;;; packages.el ends here
