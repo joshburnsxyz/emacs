@@ -28,10 +28,10 @@
         use-package-expand-minimally t))
 
 ;; UI Theme
-(use-package doom-themes
+(use-package kaolin-themes
   :ensure t
   :init
-  (load-theme 'doom-nova t))
+  (load-theme 'kaolin-blossom t))
 
 ;;; UNDO
 ;; Vim style undo
