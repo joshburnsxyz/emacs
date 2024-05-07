@@ -85,7 +85,9 @@
 
 ;; Neotree
 (use-package neotree
-  :ensure t)
+  :ensure t
+  :init
+  (setq neo-show-hidden-files t))
 
 ;; Projectile
 (use-package projectile
