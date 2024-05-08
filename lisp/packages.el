@@ -31,7 +31,7 @@
 (use-package kaolin-themes
   :ensure t
   :init
-  (load-theme 'kaolin-blossom t))
+  (load-theme 'kaolin-dark t))
 
 ;;; UNDO
 ;; Vim style undo
