@@ -131,6 +131,10 @@
   :init
   (global-hl-todo-mode))
 
+;; Theme interface with helm
+(use-package helm-themes
+  :ensure t)
+
 (provide 'packages)
 
 ;;; packages.el ends here

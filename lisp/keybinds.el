@@ -18,7 +18,7 @@
     ;; Shortcuts / Qol
     "q" '(:ignore t :which-key "QoL Shortcuts")
     "qf" 'helm-find-files
-    "qt" 'load-theme
+    "qt" 'helm-themes
 
     ;; Window
     "w" '(:ignore t :which-key "Window")
