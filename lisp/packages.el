@@ -1,7 +1,6 @@
 ;;; packages.el --- Install and setup packages
 
 ;;; Commentary:
-;; TODO: seperate packages into categories
 
 ;;; Code:
 
@@ -26,52 +25,6 @@
 (eval-and-compile
   (setq use-package-always-ensure t
         use-package-expand-minimally t))
-
-;;; UNDO
-;; Vim style undo
-(use-package undo-fu
-  :ensure t)
-
-;;; Vim Bindings
-(use-package evil
-  :ensure t
-  :bind (("<escape>" . keyboard-escape-quit))
-  :init
-  (setq evil-want-keybinding nil)
-  (setq evil-undo-system 'undo-fu)
-  (setq evil-want-integration t)
-  :init
-  (evil-mode 1))
-
-;;; Vim Bindings Everywhere else
-(use-package evil-collection
-  :ensure t
-  :after evil
-  :init
-  (evil-collection-init))
-
-;; General.el --- Keybinding engine
-(use-package general
-  :ensure t
-  :config
-  (general-evil-setup t))
-
-;; Projectile
-(use-package projectile
-  :ensure t)
-(use-package helm-projectile
-  :ensure t
-  :config
-  (projectile-mode 1)
-  (helm-projectile-on))
-
-;; Magit
-(use-package magit
-  :ensure t)
-
-;; Evil NERD commenter
-(use-package evil-nerd-commenter
-  :ensure t)
 
 (provide 'packages)
 

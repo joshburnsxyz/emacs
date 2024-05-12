@@ -17,11 +17,20 @@
 
 ;; Load modules
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-(require 'ui)
+
+;; Package.el setup
 (require 'packages)
-(require 'snippets)
-(require 'keybinds)
+
+;; Plugin groups
+(require 'ui)
+(require 'vim)
+(require 'git)
+(require 'project)
 (require 'language-support)
+(require 'snippets)
+
+;; Keybindings
+(require 'keybinds)
 
 ;; Load custom.el
 (when (file-exists-p custom-file)
