@@ -29,7 +29,7 @@
 
     ;; Buffer
     "b" '(:ignore t :which-key "Buffer")
-    "bb" 'helm-buffer
+    "bb" 'helm-buffer-list
     "bl" 'next-buffer
     "bk" 'kill-buffer
     "be" 'eval-buffer
