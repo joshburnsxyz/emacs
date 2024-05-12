@@ -25,7 +25,7 @@
 (require 'ui)
 (require 'vim)
 (require 'git)
-(require 'project)
+(require 'projects)
 (require 'language-support)
 (require 'snippets)
 

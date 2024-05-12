@@ -1,4 +1,4 @@
-;;; project.el --- Project management
+;;; projects.el --- Project management
 
 ;;; Commentary:
 
@@ -15,6 +15,6 @@
   (projectile-mode 1)
   (helm-projectile-on))
 
-(provide 'packages)
+(provide 'projects)
 
-;;; project.el ends here
+;;; projects.el ends here
