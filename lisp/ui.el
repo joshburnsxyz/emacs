@@ -30,7 +30,8 @@
 (use-package helm
   :ensure t
   :init
-  (global-set-key (kbd "M-x") 'helm-M-x))
+  (global-set-key (kbd "M-x") 'helm-M-x)
+  (setq helm-display-buffer-height 20))
 
 ;; Theme interface with helm
 (use-package helm-themes
