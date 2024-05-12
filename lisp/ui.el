@@ -77,6 +77,9 @@
   :ensure t
   :hook (global-company-mode . company-box-mode))
 
+;; Disable warnings
+(setq warning-minimum-level :emergency)
+
 (provide 'ui)
 
 ;;; ui.el ends here
