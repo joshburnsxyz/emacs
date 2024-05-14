@@ -4,8 +4,21 @@
 
 ;;; Code:
 
-;; Web HTML/CSS/JS stuff
+;; LSP
+(use-package lsp-mode
+  :ensure t
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :hook (
+	 (python-mode . lsp)
+	 (rust-mode . lsp)
+	 (go-mode . lsp)
 
+	 (lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
+(use-package helm-lsp :commands helm-lsp-workspace-symbol)
+
+;; Web HTML/CSS/JS stuff
 (use-package web-mode
   :ensure t
   :config
@@ -41,7 +54,6 @@
   :ensure t
   :config
   (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode)))
-
 (use-package flycheck-rust
   :ensure t
   :config
