@@ -4,6 +4,11 @@
 
 ;;; Code:
 
+;; Text size control
+(global-set-key (kbd "C-<") 'text-scale-decrease)
+(global-set-key (kbd "C->") 'text-scale-increase)
+
+;; Global leader mapping with SPC
 (general-define-key
     :states 'normal
     :keymaps 'override
