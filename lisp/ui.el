@@ -15,10 +15,10 @@
 (setq custom-safe-themes t)
 
 ;; UI Theme
-(use-package kaolin-themes
+(use-package modus-themes
   :ensure t
   :init
-  (load-theme 'kaolin-dark t))
+  (load-theme 'modus-vivendi t))
 
 ;; Modeline
 (use-package telephone-line
@@ -36,6 +36,12 @@
 ;; Theme interface with helm
 (use-package helm-themes
   :ensure t)
+
+;; Dired overhaul
+(use-package dirvish
+  :ensure t
+  :init
+  (dirvish-override-dired-mode))
 
 ;; Neotree
 (use-package neotree
