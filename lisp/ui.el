@@ -9,7 +9,7 @@
 (tool-bar-mode -1)
 
 ;; Make frames transparency
-(set-frame-parameter nil 'alpha-background 75)
+(set-frame-parameter nil 'alpha-background 95)
 
 ;; Display line numbers in every buffer
 (global-display-line-numbers-mode 1)
@@ -18,10 +18,14 @@
 (setq custom-safe-themes t)
 
 ;; UI Theme
-(use-package modus-themes
+(use-package moe-theme
   :ensure t
   :init
-  (load-theme 'modus-vivendi t))
+  (setq moe-theme-highlight-buffer-id t)
+  (setq moe-theme-resize-title-markdown '(1.5 1.4 1.3 1.2 1.0 1.0))
+  (setq moe-theme-resize-title-org '(1.5 1.4 1.3 1.2 1.1 1.0 1.0 1.0 1.0))
+  (setq moe-theme-resize-title-rst '(1.5 1.4 1.3 1.2 1.1 1.0))
+  (load-theme 'moe-dark t))
 
 ;; Modeline
 (use-package telephone-line
