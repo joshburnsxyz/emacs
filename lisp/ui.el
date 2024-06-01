@@ -93,6 +93,13 @@
 ;; Disable warnings
 (setq warning-minimum-level :emergency)
 
+;; auto-format different source code files extremely intelligently
+;; https://github.com/radian-software/apheleia
+(use-package apheleia
+  :ensure t
+  :config
+  (apheleia-global-mode +1))
+
 (provide 'ui)
 
 ;;; ui.el ends here
