@@ -10,6 +10,9 @@
 (setq make-backup-files nil) ; stop creating ~ files
 (auto-save-mode -1) ; disable auto saves
 
+;; Electric pair mode
+(electric-pair-mode 1)
+
 (setq custom-file (concat user-emacs-directory "custom.el"))
 
 ;; Load modules
