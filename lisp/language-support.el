@@ -42,6 +42,13 @@
   :ensure t
   :after tree-sitter)
 
+;; SmartParens
+(use-package smartparens-mode
+  :ensure smartparens
+  :hook (prog-mode text-mode markdown-mode)
+  :config
+  (require 'smartparens-config))
+
 ;; Python
 (use-package elpy
   :ensure t
