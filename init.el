@@ -17,17 +17,24 @@
 
 ;; Load modules
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
 
 ;; Package.el setup
 (require 'packages)
 
-;; Plugin groups
+;; Plugin and config layers (~/.emacs.d/lisp)
 (require 'ui)
 (require 'vim)
 (require 'git)
 (require 'projects)
 (require 'language-support)
 (require 'snippets)
+
+;; Custom plugins and scripts (~/.emacs.d/site-lisp)
+(require 'reindent-buffer)
+(require 'emacs-server-helpers)
+(require 'org-extensions)
+(require 'helm-extensions)
 
 ;; Keybindings
 (require 'keybinds)
