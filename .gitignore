@@ -6,3 +6,4 @@ eln-cache
 custom.el
 elpy
 .lsp-*
+tramp
