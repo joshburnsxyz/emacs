@@ -31,6 +31,12 @@
   (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode)))
 
+;; Markdown
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
+
 ;; Python
 (use-package elpy
   :ensure t
@@ -42,12 +48,6 @@
   :ensure t
   :init
   (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode)))
-
-;; Markdown
-(use-package markdown-mode
-  :ensure t
-  :mode ("README\\.md\\'" . gfm-mode)
-  :init (setq markdown-command "multimarkdown"))
 
 ;; Rust
 (use-package rust-mode
