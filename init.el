@@ -9,6 +9,7 @@
 (setq visible-bell nil)            ; Flash when the bell rings
 (setq make-backup-files nil) ; stop creating ~ files
 (auto-save-mode -1) ; disable auto saves
+(setq x-select-enable-clipboard-manager nil) ;; More debian shit wtf
 
 ;; Electric pair mode
 (electric-pair-mode 1)
