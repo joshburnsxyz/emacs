@@ -33,7 +33,7 @@
 
 ;; Custom plugins and scripts (~/.emacs.d/site-lisp)
 (require 'reindent-buffer)
-(require 'emacs-server-helpers)
+(require 'emacs-proc-helpers)
 (require 'org-extensions)
 (require 'helm-extensions)
 
