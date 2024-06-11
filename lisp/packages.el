@@ -5,20 +5,22 @@
 ;;; Code:
 
 
-; list the repositories containing them
+(setq package-check-signature nil) ;; Blame debian
+
+					; list the repositories containing them
 (setq package-archives '(("elpa" . "http://tromey.com/elpa/")
                          ("gnu" . "https://elpa.gnu.org/packages/")
 			 ("nongnu" . "https://elpa.nongnu.org/nongnu/")
                          ("melpa" . "https://melpa.org/packages/")))
 
-; activate all the packages (in particular autoloads)
+					; activate all the packages (in particular autoloads)
 (package-initialize)
 
-; fetch the list of packages available
+					; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
-; Install use-package
+					; Install use-package
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
