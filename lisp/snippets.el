@@ -18,6 +18,10 @@
   (add-hook 'css-mode-hook 'emmet-mode)
   (setq emmet-move-cursor-between-quotes t))
 
+;; Download yasnippet-snippets if ~/.emacs.d/snippets does not exists
+(if (not (file-directory-p "~/.emacs.d/snippets"))
+    (shell-command "git clone https://github.com/AndreaCrotti/yasnippet-snippets ~/.emacs.d/snippets"))
+
 (provide 'snippets)
 
 ;;; snippets.el ends here
