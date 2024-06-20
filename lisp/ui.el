@@ -86,6 +86,7 @@
 (use-package company-box
   :ensure t
   :hook (global-company-mode . company-box-mode))
+(use-package company-tabnine :ensure t)
 
 ;; Disable warnings
 (setq warning-minimum-level :emergency)
