@@ -41,11 +41,16 @@
 (use-package helm-themes
   :ensure t)
 
-;; Dired overhaul
-(use-package dirvish
+;; Ranger file manager
+(use-package ranger
   :ensure t
   :init
-  (dirvish-override-dired-mode))
+  (setq ranger-cleanup-on-disable t)
+  (setq ranger-show-hidden t)
+  (setq ranger-hide-cursor t)
+  (setq ranger-preview-file t)
+  :config
+  (ranger-override-dired-mode t))
 
 ;; Neotree
 (use-package neotree
@@ -86,7 +91,6 @@
 (use-package company-box
   :ensure t
   :hook (global-company-mode . company-box-mode))
-(use-package company-tabnine :ensure t)
 
 ;; Disable warnings
 (setq warning-minimum-level :emergency)
