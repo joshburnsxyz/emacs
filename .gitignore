@@ -7,3 +7,4 @@ custom.el
 elpy
 .lsp-*
 tramp
+snippets
