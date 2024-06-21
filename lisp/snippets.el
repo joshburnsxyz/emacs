@@ -19,8 +19,11 @@
   (setq emmet-move-cursor-between-quotes t))
 
 ;; Download yasnippet-snippets if ~/.emacs.d/snippets does not exists
-(if (not (file-directory-p "~/.emacs.d/snippets"))
-    (shell-command "git clone https://github.com/AndreaCrotti/yasnippet-snippets ~/.emacs.d/snippets"))
+(unless (file-directory-p "~/.emacs.d/snippets")
+  (shell-command "git clone https://github.com/AndreaCrotti/yasnippet-snippets ~/.emacs.d/snippets-tmp")
+  (rename-file "~/.emacs.d/snippets-tmp/snippets" "~/.emacs.d/snippets")
+  (delete-directory "~/.emacs.d/snippets-tmp" 'recursive)
+  (message "Fetched snippets from GitHub"))
 
 (provide 'snippets)
 
