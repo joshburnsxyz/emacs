@@ -83,6 +83,11 @@
   (with-eval-after-load 'rust-mode
     (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)))
 
+;; Dockerfile Syntax Highlight
+(use-package dockerfile-mode
+  :ensure t
+  :config)
+
 (provide 'language-support)
 
 ;;; language-support.el ends here
