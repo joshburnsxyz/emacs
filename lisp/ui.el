@@ -41,17 +41,6 @@
 (use-package helm-themes
   :ensure t)
 
-;; Ranger file manager
-(use-package ranger
-  :ensure t
-  :init
-  (setq ranger-cleanup-on-disable t)
-  (setq ranger-show-hidden t)
-  (setq ranger-hide-cursor t)
-  (setq ranger-preview-file t)
-  :config
-  (ranger-override-dired-mode t))
-
 ;; Neotree
 (use-package neotree
   :ensure t
