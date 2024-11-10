@@ -88,6 +88,18 @@
   :ensure t
   :config)
 
+;; Docker compose Syntax Highlight
+(use-package docker-compose-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.docker-compose\\.yml\\'" . docker-compose-mode)))
+
+;; General YAML support
+(use-package yaml-mode
+  :ensure t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode)))
+
 (provide 'language-support)
 
 ;;; language-support.el ends here
