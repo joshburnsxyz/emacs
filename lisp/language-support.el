@@ -100,6 +100,9 @@
   :init
   (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode)))
 
+(use-package ess
+  :ensure t)
+
 (provide 'language-support)
 
 ;;; language-support.el ends here
