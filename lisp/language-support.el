@@ -9,6 +9,9 @@
   :ensure t
   :init
   (setq lsp-keymap-prefix "C-c l")
+  :custom
+  (lsp-rust-analyzer-diagnostics-disabled '("unlinked-file"))
+  (lsp-rust-analyzer-cargo-watch-command "clippy")
   :hook (
 	 (python-mode . lsp)
 	 (rust-mode . lsp)
