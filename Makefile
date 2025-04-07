@@ -4,6 +4,14 @@ clean:
 		eln-cache \
 		elpy \
 		transient \
-		projectile-bookmarks.eld \
+		.cache \
+		.lsp-session* \
+		tramp
+
+clean-all: clean
+	@rm -rf \
+		elpa \
+		quelpa \
 		custom.el \
-		elpa
+		projectile-bookmarks.eld \
+		recentf \
