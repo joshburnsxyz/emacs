@@ -15,14 +15,13 @@
 (setq custom-safe-themes t)
 
 ;; UI Theme
-(use-package moe-theme
+(use-package ef-themes
   :ensure t
-  :init
-  (setq moe-theme-highlight-buffer-id t)
-  (setq moe-theme-resize-title-markdown '(1.5 1.4 1.3 1.2 1.0 1.0))
-  (setq moe-theme-resize-title-org '(1.5 1.4 1.3 1.2 1.1 1.0 1.0 1.0 1.0))
-  (setq moe-theme-resize-title-rst '(1.5 1.4 1.3 1.2 1.1 1.0))
-  (load-theme 'moe-dark t))
+  :config
+  (mapc #'disable-theme custom-enabled-themes)
+  (setq ef-themes-mixed-fonts t)
+  (setq ef-themes-variable-pitch-ui t)
+  (ef-themes-select 'ef-bio))
 
 ;; Modeline
 (use-package telephone-line
