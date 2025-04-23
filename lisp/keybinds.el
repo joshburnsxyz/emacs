@@ -25,7 +25,8 @@
  "qf" 'helm-find-files
  "qt" 'helm-themes
  "qa" 'global-copilot-mode
-
+ "qr" 'reindent-buffer
+ 
  ;; Window
  "w" '(:ignore t :which-key "Window")
  "wh" 'evil-window-left
