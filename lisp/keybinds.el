@@ -24,7 +24,7 @@
  "q" '(:ignore t :which-key "QoL Shortcuts")
  "qf" 'helm-find-files
  "qt" 'helm-themes
- "qa" 'global-tabnine-mode
+ "qa" 'global-copilot-mode
 
  ;; Window
  "w" '(:ignore t :which-key "Window")
