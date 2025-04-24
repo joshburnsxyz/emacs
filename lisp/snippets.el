@@ -11,6 +11,11 @@
 	'("~/.emacs.d/snippets"))
   (yas-global-mode 1))
 
+(use-package yasnippet-snippets
+  :ensure t
+  :config
+  (yas-reload-all))
+
 (use-package emmet-mode
   :ensure t
   :init
