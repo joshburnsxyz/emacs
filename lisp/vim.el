@@ -38,6 +38,10 @@
 (use-package evil-nerd-commenter
   :ensure t)
 
+;; Multiple Cursors
+(use-package evil-multiedit :ensure t)
+
+
 (provide 'vim)
 
 ;;; vim.el ends here

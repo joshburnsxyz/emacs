@@ -8,6 +8,20 @@
 (global-set-key (kbd "C-<") 'text-scale-decrease)
 (global-set-key (kbd "C->") 'text-scale-increase)
 
+;; Multiple Cursors
+;;; VIM keybinds
+(evil-define-key '(normal visual) 'global
+  "gzm" #'evil-multiedit-match-all
+  "gzn" #'evil-multiedit-match-and-next
+  "gzp" #'evil-multiedit-match-and-prev
+  "gzz" #'evil-multiedit-toggle-marker-here)
+;;; Match navigation with M-d/M-D
+(define-key evil-visual-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
+(define-key evil-normal-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
+(define-key evil-insert-state-map (kbd "M-d") 'evil-multiedit-toggle-marker-here)
+(define-key evil-normal-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
+(define-key evil-visual-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
+
 ;; Global leader mapping with SPC
 (general-define-key
  :states 'normal
